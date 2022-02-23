@@ -6,6 +6,7 @@ from .data import job_data
 class Command(BaseCommand):
 
     def handle(self, *args, **options):
+        """ handle() function needed in BaseCommand class """
         self.stdout.write("Seeding Data")
         self.stdout.write("Deleting Data")
         delete_database()
